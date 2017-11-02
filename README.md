@@ -21,6 +21,9 @@ Caddy will parse any responses with the Content-Type "text/html" as HTML, and re
 of the configured domains so that it is a relative link.
 
 Expected behavior:
-&lt;a href="http://foo.example.com/hello.html"&gt; **becomes**
 
-&lt;a href="/hello.html"&gt;
+    <a href="http://foo.example.com/hello.html"> **becomes**
+
+    <a href="/hello.html">
+    
+The HTML5 parser will rewrite non-conforming HTML. It can't be helped, mate.
